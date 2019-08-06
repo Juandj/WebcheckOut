@@ -14,7 +14,8 @@ class Autentication
       // $auth->tranKey = base64_encode(sha1( $auth->escrito, true));
       $auth->nonce = base64_encode($auth->nonce);
       return $auth;
-    } catch (\Exception $e) {
+    } 
+      catch (\Exception $e) {
       return $e;
     }
   }
